@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  devices:
+    build: ./devices
+
+  metrics:
+    build: ./metrics
+    ports:
+      - "8000:8000"
+
+  prometheus:
+    build: ./prometheus
+    ports:
+      - "9090:9090"
+
+  grafana:
+    build: ./grafana
+    ports:
+      - "3000:3000"
+
+  

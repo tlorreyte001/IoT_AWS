@@ -1,8 +1,6 @@
-#AWS SDK
-/aws-iot-device-sdk-python
-
-#keys
-/keys
+#Keys
+devices/keys
+metrics/keys
 
 #.idea
 /.idea

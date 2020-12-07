@@ -5,15 +5,6 @@ import time
 MQTT_ENDPOINT = "a27g8v3y378vq3-ats.iot.us-east-1.amazonaws.com"
 MQTT_PORT = 8883
 
-# Configure logging
-# import logging
-# logger = logging.getLogger("AWSIoTPythonSDK.core")
-# logger.setLevel(logging.DEBUG)
-# streamHandler = logging.StreamHandler()
-# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-# streamHandler.setFormatter(formatter)
-# logger.addHandler(streamHandler)
-
 
 def create_client(id_client):
 
@@ -42,7 +33,6 @@ def main():
         print("Temperature envoyee : " + str(Temp))
         print("--------------")
         time.sleep(3)
-    myAWSIoTMQTTClient.disconnect()
 
 
 if __name__ == '__main__':
